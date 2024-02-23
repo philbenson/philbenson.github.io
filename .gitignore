@@ -1,0 +1,7 @@
+.hotfile
+.vscode
+node_modules/
+portfolio/static/portfolio/img/
+*.jpg
+*.png
+**/__pycache__/
