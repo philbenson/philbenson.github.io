@@ -8,4 +8,7 @@ export default defineConfig({
       input: ["./static/js/main.js", "./static/css/tailwind.css"],
     }),
   ],
+  server: {
+    hmr: { host: "localhost" },
+  },
 });

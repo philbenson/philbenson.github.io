@@ -1,0 +1,8 @@
+.DS_Store
+.git
+.hotfile
+.vscode
+db.sqlite3
+node_modules
+staticfiles
+**/__pycache__
