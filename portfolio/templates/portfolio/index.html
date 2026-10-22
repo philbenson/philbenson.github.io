@@ -1,71 +1,75 @@
 <!DOCTYPE html>
 {% load vite %}
-<html lang="en">
+<html lang="en" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phil Benson</title>
     {% vite 'css/tailwind.css' %}
 </head>
-<body>
-    <h1>Phil Benson</h1>
+<body class="bg-white dark:bg-black font-light text-black dark:text-grey text-2xl px-96 py-8">
+    <h1 class="font-title font-bold text-8xl mt-16">Phil Benson</h1>
 
-    <section>
-        <h2>About Me</h2>
+    <section class="bg-gradient-to-r from-fuschia/50 to-pink/50 dark:from-fuschia/25 dark:to-pink/25  text-black dark:text-grey my-8 p-8 rounded">
+        <h2 class="font-serif font-bold text-4xl w-100 mb-8 pb-8 border-b border-dotted border-fuschia">About Me</h2>
 
-        <p>Phil Benson is an experienced web developer and designer currently based in Philadelphia.</p>
-        <p>I’ve been coding for fun and profit since the days of Geocities homepages—practically forever. I’m comfortable with established web standards as well as many cutting edge technologies, and I’m constantly learning more.</p>
-        <p>I'm currently working as a back-end developer, but I'm always open to side projects and freelance work. <a href="#">Get in touch!</a></p>
+        <p class="mb-4">I'm an experienced web developer with a proven history of solving real world problems.</p>
+        <p class="mb-4">I’ve been coding for fun and profit since the days of Geocities homepages—practically forever. I’m comfortable with established web standards as well as many cutting edge technologies, and I’m constantly learning more.</p>
+        <p class="mb-4">I'm currently working as a Senior Back End Developer (remotely, based in Philadelphia), but I'm always open to side projects and freelance work. <a href="#">Get in touch!</a></p>
     </section>
 
-    <section>
-        <h2>Skills</h2>
+    <section class="bg-gradient-to-r from-pink/50 to-orange/50 dark:from-pink/25 dark:to-orange/25 text-black dark:text-grey my-8 p-8 rounded">
+        <h2 class="font-serif font-bold text-4xl w-100 mb-8 pb-8 border-b border-dotted border-pink">Skills</h2>
 
-        <section>
-            <h3>Languages</h3>
+        <section class="grid grid-cols-3 gap-4">
+            <section>
+                <h3 class="font-medium mb-2">Languages:</h3>
 
-            <ul>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>Javascript</li>
-                <li>PHP</li>
-                <li>SQL</li>
-                <li>Blade</li>
-                <li>Liquid</li>
-            </ul>
+                <ul class="list-disc list-inside">
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>Javascript</li>
+                    <li>PHP</li>
+                    <li>SQL</li>
+                    <li>Blade</li>
+                    <li>Liquid</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3 class="font-medium mb-2">Frameworks, Libraries, and Platforms:</h3>
+
+                <ul class="list-disc list-inside">
+                    <li>Laravel</li>
+                    <li>Yii</li>
+                    <li>jQuery</li>
+                    <li>AngularJS</li>
+                    <li>Cordova</li>
+                    <li class="font-thin italic opacity-50">Bootstrap</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3 class="font-medium mb-2">Software:</h3>
+
+                <ul class="list-disc list-inside">
+                    <li>Git</li>
+                    <li>Subversion</li>
+                    <li>Composer</li>
+                    <li>Bower</li>
+                    <li>Gulp</li>
+                    <li>Apache</li>
+                </ul>
+            </section>
         </section>
 
-        <section>
-            <h3>Frameworks, Libraries, and Platforms</h3>
-
-            <ul>
-                <li>Laravel</li>
-                <li>Yii</li>
-                <li>jQuery</li>
-                <li>AngularJS</li>
-                <li>Cordova</li>
-                <li>Bootstrap</li>
-            </ul>
-        </section>
-
-        <section>
-            <h3>Software</h3>
-
-            <ul>
-                <li>Git</li>
-                <li>Subversion</li>
-                <li>Composer</li>
-                <li>Bower</li>
-                <li>Gulp</li>
-                <li>Apache</li>
-            </ul>
-        </section>
-
-        <p>These are just the tools I use regularly. Curious about something you don't see listed? Chances are I've at least encountered it before. <a href="#">Get in touch!</a></p>
+        <p class="mt-8">These are just the tools I use regularly. Curious about something you don't see listed? Chances are I've at least encountered it before. <a href="#">Get in touch!</a></p>
     </section>
 
-    <section>
-        <h2>Contact</h2>
+    <section class="bg-gradient-to-r from-orange/50 to-yellow/50  dark:from-orange/25 dark:to-yellow/25 text-black dark:text-grey my-8 p-8 rounded">
+        <h2 class="font-serif font-bold text-4xl w-100 mb-8 pb-8 border-b border-dotted border-orange">Contact</h2>
     </section>
+
+    {% vite 'js/main.js' %}
 </body>
 </html>
