@@ -1,7 +1,9 @@
+.DS_Store
 .hotfile
 .vscode
+db.sqlite3
 node_modules/
 portfolio/static/portfolio/img/
-*.jpg
-*.png
+staticfiles/
 **/__pycache__/
+temp/
