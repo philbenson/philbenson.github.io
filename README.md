@@ -19,3 +19,17 @@ After changing `package.json`, clear the cached packages so they reinstall:
 docker compose down --volumes
 docker compose up --build
 ```
+
+## Build the site
+
+The published site is static files: Django renders each page once, and GitHub
+Pages serves the result. To build it locally, with the containers running:
+
+```sh
+docker compose exec -e DJANGO_DEBUG=1 vite npm run build
+docker compose exec -e DJANGO_DEBUG=0 -e DJANGO_SECRET_KEY=local-build web python manage.py build_site _site
+```
+
+The site lands in `_site/`. `npm run build` runs with debug mode on because the
+Vite plugin reads Django's settings before any styles are built, and with debug
+mode off those settings expect the built styles to exist already.
