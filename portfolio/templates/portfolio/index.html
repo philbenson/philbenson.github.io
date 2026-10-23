@@ -14,61 +14,52 @@
     <section class="bg-gradient-to-r from-fuschia/50 to-pink/50 dark:from-fuschia/25 dark:to-pink/25  text-black dark:text-grey my-8 p-8 rounded">
         <h2 class="font-serif font-bold text-4xl w-100 mb-8 pb-8 border-b border-dotted border-fuschia">About Me</h2>
 
-        <p class="mb-4">I'm an experienced web developer with a proven history of solving real world problems.</p>
-        <p class="mb-4">I’ve been coding for fun and profit since the days of Geocities homepages—practically forever. I’m comfortable with established web standards as well as many cutting edge technologies, and I’m constantly learning more.</p>
-        <p class="mb-4">I'm currently working as a Senior Back End Developer (remotely, based in Philadelphia), but I'm always open to side projects and freelance work. <a href="#">Get in touch!</a></p>
+        <p class="mb-4">I'm a senior software engineer working on back-end and full-stack web applications.</p>
+        <p class="mb-4">I’ve been coding for fun and profit since the days of Geocities homepages—practically forever. I’m comfortable with established web standards as well as many cutting-edge technologies, and I’m constantly learning more.</p>
+        <p class="mb-4">I work remotely from Philadelphia, and I'm open to new roles, side projects, and freelance work. <a href="#contact">Get in touch!</a></p>
     </section>
 
     <section class="bg-gradient-to-r from-pink/50 to-orange/50 dark:from-pink/25 dark:to-orange/25 text-black dark:text-grey my-8 p-8 rounded">
         <h2 class="font-serif font-bold text-4xl w-100 mb-8 pb-8 border-b border-dotted border-pink">Skills</h2>
 
-        <section class="grid grid-cols-3 gap-4">
+        <section class="flex flex-col gap-6">
             <section>
                 <h3 class="font-medium mb-2">Languages:</h3>
-
-                <ul class="list-disc list-inside">
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>Javascript</li>
-                    <li>PHP</li>
-                    <li>SQL</li>
-                    <li>Blade</li>
-                    <li>Liquid</li>
-                </ul>
+                <p>PHP, Python, SQL, JavaScript / TypeScript, Ruby, HTML, CSS</p>
             </section>
 
             <section>
                 <h3 class="font-medium mb-2">Frameworks, Libraries, and Platforms:</h3>
-
-                <ul class="list-disc list-inside">
-                    <li>Laravel</li>
-                    <li>Yii</li>
-                    <li>jQuery</li>
-                    <li>AngularJS</li>
-                    <li>Cordova</li>
-                    <li class="font-thin italic opacity-50">Bootstrap</li>
-                </ul>
+                <p>Laravel, Symfony, Django, Rails, Vue, React, Next.js, Tailwind, Drupal, Azure, AWS, Anthropic</p>
             </section>
 
             <section>
                 <h3 class="font-medium mb-2">Software:</h3>
-
-                <ul class="list-disc list-inside">
-                    <li>Git</li>
-                    <li>Subversion</li>
-                    <li>Composer</li>
-                    <li>Bower</li>
-                    <li>Gulp</li>
-                    <li>Apache</li>
-                </ul>
+                <p>MySQL / PostgreSQL, Redis, Celery, Docker, Linux, Nginx, Sentry, Git, Composer, Vite / Webpack, PHPUnit, pytest, Jest, Playwright, OpenAPI / Swagger, Jira, Linear, Google, Claude Code</p>
             </section>
         </section>
 
-        <p class="mt-8">These are just the tools I use regularly. Curious about something you don't see listed? Chances are I've at least encountered it before. <a href="#">Get in touch!</a></p>
+        <p class="mt-8">These are just the tools I use regularly. Curious about something you don't see listed? Chances are I've at least encountered it before. <a href="#contact">Just ask!</a></p>
     </section>
 
-    <section class="bg-gradient-to-r from-orange/50 to-yellow/50  dark:from-orange/25 dark:to-yellow/25 text-black dark:text-grey my-8 p-8 rounded">
+    <section id="contact" class="bg-gradient-to-r from-orange/50 to-yellow/50  dark:from-orange/25 dark:to-yellow/25 text-black dark:text-grey my-8 p-8 rounded">
         <h2 class="font-serif font-bold text-4xl w-100 mb-8 pb-8 border-b border-dotted border-orange">Contact</h2>
+
+        <form action="https://formspree.io/f/mrbzepqa" method="POST" class="flex flex-col gap-6">
+            <label class="flex flex-col gap-2">
+                <span class="font-medium">Your email:</span>
+                <input type="email" name="email" required autocomplete="email" maxlength="254" class="rounded p-4 bg-white/50 dark:bg-black/50 border border-dotted border-orange focus:border-solid">
+            </label>
+
+            <label class="flex flex-col gap-2">
+                <span class="font-medium">Message:</span>
+                <textarea name="message" required rows="6" maxlength="5000" class="rounded p-4 bg-white/50 dark:bg-black/50 border border-dotted border-orange focus:border-solid"></textarea>
+            </label>
+
+            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" class="hidden">
+
+            <button type="submit" class="self-start font-medium rounded px-8 py-4 bg-orange/50 hover:bg-orange text-black">Send</button>
+        </form>
     </section>
 
     {% vite 'js/main.js' %}
