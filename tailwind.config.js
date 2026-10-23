@@ -17,9 +17,8 @@ module.exports = {
       'yellow': '#dec894',
     },
     fontFamily: {
-      'sans': ['"HelveticaNeue-Light"', '"Helvetica Neue"', 'Helvetica', 'Arial', 'sans-serif'],
-      'serif': ['"HarrietDisplay-Bold"', '"Harriet Display"', 'Georgia', 'serif'],
-      'title': ['"HarrietDisplay-Black"', '"Harriet Display"', 'Georgia', 'serif'],
+      'sans': ['"Portfolio Sans"', '"Helvetica Neue"', 'Helvetica', 'Arial', 'sans-serif'],
+      'serif': ['"Portfolio Serif"', '"Harriet Display"', 'Georgia', 'serif'],
     },
     extend: {},
   },

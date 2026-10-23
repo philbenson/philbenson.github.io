@@ -2,6 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: "Portfolio Sans";
+    font-weight: 300;
+    src: local("HelveticaNeue-Light"), local("Helvetica Neue Light");
+}
+
+@font-face {
+    font-family: "Portfolio Sans";
+    font-weight: 500;
+    src: local("HelveticaNeue-Medium"), local("Helvetica Neue Medium");
+}
+
+@font-face {
+    font-family: "Portfolio Serif";
+    font-weight: 700;
+    src: local("HarrietDisplay-Bold"), local("Harriet Display Bold");
+}
+
+@font-face {
+    font-family: "Portfolio Serif";
+    font-weight: 900;
+    src: local("HarrietDisplay-Black"), local("Harriet Display Black");
+}
+
 @layer base {
     a {
       @apply font-medium border-b border-dotted hover:border-solid;
