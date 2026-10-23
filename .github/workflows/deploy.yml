@@ -35,10 +35,8 @@ jobs:
           pip install -r requirements.txt
           npm ci
 
-      - name: Build styles, reading Django's settings in debug mode
+      - name: Build styles
         run: npm run build
-        env:
-          DJANGO_DEBUG: "1"
 
       - name: Render pages
         run: |
