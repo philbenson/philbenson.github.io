@@ -33,3 +33,9 @@ docker compose exec -e DJANGO_DEBUG=0 -e DJANGO_SECRET_KEY=local-build web pytho
 The site lands in `_site/`. `npm run build` runs with debug mode on because the
 Vite plugin reads Django's settings before any styles are built, and with debug
 mode off those settings expect the built styles to exist already.
+
+## Deploy
+
+Every push to `main` runs `.github/workflows/deploy.yml`, which builds the site
+the same way and publishes it to GitHub Pages at https://philbenson.name. A run
+can also be started by hand from the repository's Actions tab.
