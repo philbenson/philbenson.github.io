@@ -58,6 +58,9 @@ MIDDLEWARE = [
 if DEBUG:
     INSTALLED_APPS.append('debug_toolbar')
     MIDDLEWARE.insert(0, 'debug_toolbar.middleware.DebugToolbarMiddleware')
+    DEBUG_TOOLBAR_CONFIG = {
+        'SHOW_TOOLBAR_CALLBACK': 'debug_toolbar.middleware.show_toolbar_with_docker',
+    }
 
 ROOT_URLCONF = 'philbenson.urls'
 
